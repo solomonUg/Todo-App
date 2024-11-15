@@ -1,5 +1,4 @@
-
-import Footer from "./Footer";
+import Info from "./Info";
 import Form from "./Form";
 import TodoList from "./TodoList";
 import { useState } from "react";
@@ -11,10 +10,10 @@ export default function () {
 
 
   return (
-    <div className="flex justify-center mt-32 flex-col items-center w-100% ">
+    <div className="flex flex-col items-center mt-12 bg-slate-300">
       <Form todos={todos} setTodos={setTodos}/>
       <TodoList todos={todos} setTodos={setTodos}/>
-      <Footer completed={completed} total = {total} />
+      <Info completed={completed} total = {total} />
     </div>
   );
 }

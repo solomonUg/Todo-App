@@ -11,17 +11,15 @@ export default function({ todos, setTodos}) {
         }
        
       }
-    return <div >
-        <form className="w-100% flex gap-1  " >
+    return <form className=" w-[40%] flex gap-1"> 
         <input
           type="text"
-          className="border-black-400 	outline-black border py-3 pr-20 pl-2"  placeholder="Enter your todo... "
+          className="border-black-400 	outline-black border py-3 pr-20 pl-2 w-[100%]"  placeholder="Enter your todo... "
           value={todo.name}
           onChange={(e) => setTodo({name:e.target.value, done: false})}
         />
         <button className="flex items-center justify-center bg-black p-3  text-white" onClick={handleSubmit}>
-          Add
+          Add <span>+</span>
         </button>
-      </form>
-    </div>
+    </form>
 }

@@ -1,8 +1,5 @@
-
-export default function Footer ({completed, total}){
-return <div className="bg-black w-full text-white fixed bottom-0 flex justify-center py-8 gap-8">
-    <h2>Completed Todos: {completed} </h2>
-    <h2>Total Todos: {total} </h2>
-
-</div>
+export default function Footer (){
+    return <div className="bg-black text-white text-center h-16">
+        &copy; Snow Tech
+    </div>
 }
