@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 export default function({ todos, setTodos}) {
   const [todo, setTodo] = useState({name:"", done: false});
 
@@ -19,7 +20,8 @@ export default function({ todos, setTodos}) {
           onChange={(e) => setTodo({name:e.target.value, done: false})}
         />
         <button className="flex items-center justify-center bg-black p-3  text-white" onClick={handleSubmit}>
-          Add <span>+</span>
+          Add 
         </button>
+
     </form>
 }
